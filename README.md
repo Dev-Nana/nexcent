@@ -1,4 +1,4 @@
-# Design de landing page - Nexcent
+# Landing Page - Nexcent
 
 ![Here is the link to access the result production](https://nexcent-dev-nana.vercel.app/)
 
