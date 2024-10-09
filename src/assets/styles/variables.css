@@ -1,0 +1,33 @@
+:root {
+  /* neutral */
+  --Black: #263238;
+  --D_grey: #4D4D4D;
+  --Grey: #717171;
+  --L_grey: #89939E;
+  --Grey-blue: #ABBED1;
+  --Silver: #F5F7FA;
+  --White: #FFFFFF;
+
+  --Primary: #28CB8B;
+  --Secondary: #263238;
+  --Info: #2194f3;
+
+  /* color shade */
+  --Shade1: #43A046;
+  --Shade2: #388E3B;
+  --Shade3: #237D31;
+  --Shade4: #1B5E1F;
+  --Shade5: #103E13;
+
+  /* color tint */
+  --Tint1: #66BB69;
+  --Tint2: #81C784;
+  --Tint3: #A5D6C9;
+  --Tint4: #C8E6C9;
+  --Tint5: #E8F5E9;
+
+  /* action */
+  --Warning: #FBC02D;
+  --Error: #E53835;
+  --Success: #2E7D31;
+}
