@@ -25,7 +25,7 @@ export default function Navbar() {
 
           {/* Mobile menu button*/}
           <div className="items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md py-2 px-1 text-gray-400 hover:bg-green-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md py-2 px-1 text-gray-800 hover:bg-green-500 hover:text-white transition-all duration-300">
               <span className="absolute -inset-0.5"/>
               <Bars3Icon
                 aria-hidden="true"
@@ -65,7 +65,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <button
               type="button"
-              className="rounded-md py-2.5 px-5 m-1 text-green-500 hover:text-white hover:bg-green-500"
+              className="rounded-md py-2.5 px-5 m-1 text-gray-800 hover:text-white hover:bg-green-500 transition-all duration-300"
             >
               Login
             </button>
