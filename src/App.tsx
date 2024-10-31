@@ -1,13 +1,14 @@
 import Navbar from "./components/navbar/Navbar";
-import Carousel from "./components/Carousel/Carousel";
+import Carousel from "./components/carousel/Carousel";
+import Banner from "./components/banner/Banner";
 
 import './App.css'
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="app-container bg-gray-200">
       <Navbar />
-      <Carousel />
+      <Banner />
     </div>
   )
 }

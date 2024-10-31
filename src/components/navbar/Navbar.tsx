@@ -4,7 +4,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 
-import Logo from "../../assets/images/Logo.png";
+import Logo from "../../assets/images/image-logo.png";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -25,7 +25,7 @@ export default function Navbar() {
 
           {/* Mobile menu button*/}
           <div className="items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md py-2 px-1 text-gray-800 hover:bg-green-500 hover:text-white transition-all duration-300">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md py-2 px-1 text-gray-800 hover:bg-green-600 hover:text-white transition-all duration-300">
               <span className="absolute -inset-0.5"/>
               <Bars3Icon
                 aria-hidden="true"
@@ -50,10 +50,10 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     aria-current={item.current ? "page" : undefined}
-                    className={`rounded-md px-[0.8vw] py-2 text-sm font-medium ${
+                    className={`rounded-md px-[0.8vw] py-2 text-sm font-medium text-gray-700 ${
                       item.current
-                        ? "underline text-green-500"
-                        : "hover:text-green-500"
+                        ? "text-black font-semibold"
+                        : "hover:font-semibold"
                     }`}
                   >
                     {item.name}
@@ -65,13 +65,13 @@ export default function Navbar() {
           <div className="flex items-center">
             <button
               type="button"
-              className="rounded-md py-2.5 px-5 m-1 text-gray-800 hover:text-white hover:bg-green-500 transition-all duration-300"
+              className="rounded-md py-2.5 px-5 m-1 text-green-600 hover:text-white hover:bg-green-600 transition-all duration-300"
             >
               Login
             </button>
             <button
               type="button"
-              className="rounded-md bg-green-500 py-2.5 px-5 m-1 text-white text-nowrap"
+              className="rounded-md bg-green-600 py-2.5 px-5 m-1 text-white text-nowrap"
             >
               Sign up
             </button>
