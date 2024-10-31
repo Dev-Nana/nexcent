@@ -1,10 +1,14 @@
 import Navbar from "./components/navbar/Navbar";
+import Carousel from "./components/Carousel/Carousel";
 
 import './App.css'
 
 function App() {
   return (
-    <Navbar />
+    <div className="app-container">
+      <Navbar />
+      <Carousel />
+    </div>
   )
 }
 
