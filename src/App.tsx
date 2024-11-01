@@ -1,5 +1,4 @@
 import Navbar from "./components/navbar/Navbar";
-import Carousel from "./components/carousel/Carousel";
 import Banner from "./components/banner/Banner";
 
 import './App.css'
