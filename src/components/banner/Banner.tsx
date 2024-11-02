@@ -1,5 +1,4 @@
 import ImageBanner from "../../assets/images/image-banner.png"
-import Dots from "../dots/Dots";
 
 export default function Banner() {
   return (
@@ -22,7 +21,6 @@ export default function Banner() {
       <div className="hidden sm:block w-1/3">
         <img src={ImageBanner} />
       </div>
-      <Dots />
     </div>
   );
 }
