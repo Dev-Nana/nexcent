@@ -2,23 +2,23 @@ import ImageBanner from "../../assets/images/image-banner.png"
 
 export default function Banner() {
   return (
-    <div className="flex flex-row w-full p-28 justify-center items-center">
-      <div className="max-w-2xl text-start w-2/3">
-        <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
-          Lessons and insights <span className="text-green-600">from 8 years</span>
+    <div className="flex flex-row w-full py-14 sm:py-28 lg:px-[9vw] sm:px-[8vw] px-[15vw] sm:justify-between justify-center items-center gap-4">
+      <div className="max-w-3xl sm:text-start text-center flex flex-col gap-7">
+        <h1 className="text-balance font-semibold tracking-wide sm:text-[4.6vw] text-[5.9vw] leading-snug sm:leading-none">
+          Lessons and insights <span className="text-green block">from 8 years</span>
         </h1>
-        <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-sm">
+        <p className="text-pretty text-gray-500 lg:text-[1.3vw] text-[3vw] sm:text-[1.5vw]">
           Where to grow your business as a photographer: site or social media?
         </p>
-        <div className="mt-10 flex items-center gap-x-6">
+        <div className="flex justify-center sm:justify-start items-center gap-x-6">
           <a
-            className="rounded-sm bg-green-600 px-7 py-3 text-sm font-semibold text-white shadow-sm"
+            className="rounded-md bg-green px-8 py-4 text-sm font-semibold text-white shadow-sm"
           >
             Register
           </a>
         </div>
       </div>
-      <div className="opacity-0 sm:opacity-100 w-1/3">
+      <div className="hidden sm:block w-1/3">
         <img className='' src={ImageBanner} />
       </div>
     </div>
