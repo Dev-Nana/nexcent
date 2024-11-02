@@ -20,28 +20,28 @@ const navigation = [
 export default function Navbar() {
   return (
     <Disclosure as="nav">
-      <div className="max-w-full px-2 sm:px-8">
-        <div className="relative flex h-16 items-center justify-around sm:text-sm text-xs">
+      <div className="max-w-full px-2 py-3 sm:px-1">
+        <div className="relative flex h-16 items-center justify-around lg:text-[1.1vw] md:text-[1.5vw] sm:text-[1.7vw] text-sm">
 
           {/* Mobile menu button*/}
           <div className="items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md py-2 px-1 text-gray-800 hover:bg-green-600 hover:text-white transition-all duration-300">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md py-2 px-1 hover:bg-green hover:text-white transition-all duration-300">
               <span className="absolute -inset-0.5"/>
               <Bars3Icon
                 aria-hidden="true"
-                className="block h-6 w-6 group-data-[open]:hidden"
+                className="block h-8 w-8 group-data-[open]:hidden"
               />
               <XMarkIcon
                 aria-hidden="true"
-                className="hidden h-6 w-6 group-data-[open]:block"
+                className="hidden h-8 w-8 group-data-[open]:block"
               />
             </DisclosureButton>
           </div>
           {/* Mobile menu button*/}
 
-          <div className="flex items-center lg:w-[55vw] w-[70vw] sm:w-[63vw] justify-center sm:justify-between sm:items-stretch">
+          <div className="flex items-center lg:w-[66vw] w-[76vw] sm:w-[76vw] justify-center sm:justify-between sm:items-stretch">
             <div className="relative flex flex-shrink-0 items-center">
-              <img src={Logo} className="h-4 w-auto"/>
+              <img src={Logo} className="h-5 w-auto"/>
             </div>
             <div className="hidden sm:block">
               <div className="flex">
@@ -50,7 +50,7 @@ export default function Navbar() {
                     key={item.name}
                     href={item.href}
                     aria-current={item.current ? "page" : undefined}
-                    className={`rounded-md px-[0.8vw] py-2 text-sm font-medium text-gray-700 ${
+                    className={`rounded-md px-[1.9vw] py-2 lg:text-[1.1vw] md:text-[1.5vw] sm:text-[1.7vw]  ${
                       item.current
                         ? "text-black font-semibold"
                         : "hover:font-semibold"
@@ -65,13 +65,13 @@ export default function Navbar() {
           <div className="flex items-center">
             <button
               type="button"
-              className="rounded-md py-2.5 px-5 m-1 text-green-600 hover:text-white hover:bg-green-600 transition-all duration-300"
+              className="rounded-md py-4 px-5 m-1 text-green hover:text-white hover:bg-green transition-all duration-300"
             >
               Login
             </button>
             <button
               type="button"
-              className="rounded-md bg-green-600 py-2.5 px-5 m-1 text-white text-nowrap"
+              className="rounded-md bg-green py-4 px-5 m-1 text-white text-nowrap"
             >
               Sign up
             </button>
@@ -79,8 +79,8 @@ export default function Navbar() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="rounded-md space-y-1 px-2 pb-3 pt-2 mx-6 bg-green-600 text-xs">
+      <DisclosurePanel className="sm:hidden bg-red-600 w-full flex justify-center">
+        <div className="fixed w-[90%] rounded-md space-y-1 px-2 pb-3 pt-2 bg-green">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
@@ -89,8 +89,8 @@ export default function Navbar() {
               aria-current={item.current ? "page" : undefined}
               className={`block rounded-md px-3 py-2 text-white ${
                 item.current
-                  ? "bg-gray-900"
-                  : "hover:bg-gray-900"
+                  ? "bg-gray-800"
+                  : "hover:bg-gray-800"
               }`}
             >
               {item.name}

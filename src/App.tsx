@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="app-container bg-gray-200">
+    <div className="app-container bg-gray-100">
       <Navbar />
       <Banner />
     </div>
