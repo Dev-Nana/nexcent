@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         green: '#47a24a',
+        green2: '#81C784',
       },
     },
     plugins: [],
