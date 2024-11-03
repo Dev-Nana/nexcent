@@ -80,7 +80,7 @@ export default function Navbar() {
       </div>
 
       <DisclosurePanel className="sm:hidden w-full flex justify-center">
-        <div className="fixed w-[90%] rounded-md space-y-1 px-2 pb-3 pt-2 bg-green">
+        <div className="z-10 fixed w-[90%] rounded-md space-y-1 px-2 pb-3 pt-2 bg-green">
           {navigation.map((item) => (
             <DisclosureButton
               key={item.name}
