@@ -1,17 +1,15 @@
 import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/banner/Banner";
-import Clients from "./components/clients/Clients";
 
-import "./App.css";
+import './App.css'
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="app-container bg-gray-100">
       <Navbar />
       <Banner />
-      <Clients />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
