@@ -4,24 +4,24 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 
-import Logo from "../../assets/images/image-logo.png";
+import { Logo } from "../../assets/images";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "Service", href: "#", current: false },
-  { name: "Feature", href: "#", current: false },
-  { name: "Product", href: "#", current: false },
-  { name: "Testimonial", href: "#", current: false },
+  { name: "Serviço", href: "#", current: false },
+  { name: "Recurso", href: "#", current: false },
+  { name: "Produto", href: "#", current: false },
+  { name: "Resumo", href: "#", current: false },
   { name: "FAQ", href: "#", current: false },
 ];
 
 export default function Navbar() {
   return (
     <Disclosure as="nav">
-      <div className="max-w-full px-2 py-3 sm:px-1">
-        <div className="relative flex h-16 items-center justify-around lg:text-[1.1vw] md:text-[1.5vw] sm:text-[1.7vw] text-sm">
+      <div className="bg-gray-100 max-w-full px-2 py-3 sm:px-1">
+        <div className="relative flex h-[8.6vh] items-center justify-around lg:text-[1.1vw] md:text-[1.5vw] sm:text-[1.7vw] text-sm">
 
           {/* Mobile menu button*/}
           <div className="items-center sm:hidden">
@@ -52,8 +52,8 @@ export default function Navbar() {
                     aria-current={item.current ? "page" : undefined}
                     className={`rounded-md px-[1.9vw] py-2 lg:text-[1.1vw] md:text-[1.5vw] sm:text-[1.7vw]  ${
                       item.current
-                        ? "text-black font-semibold"
-                        : "hover:font-semibold"
+                        ? "text-black"
+                        : "hover:text-black"
                     }`}
                   >
                     {item.name}
@@ -65,13 +65,13 @@ export default function Navbar() {
           <div className="flex items-center">
             <button
               type="button"
-              className="rounded-md py-4 px-5 m-1 text-green hover:text-white hover:bg-green transition-all duration-300"
+              className="lg:text-[1.1vw] md:text-[1.5vw] sm:text-[1.7vw] rounded-md py-4 px-5 m-1 text-green hover:text-white hover:bg-green transition-all duration-300"
             >
-              Login
+              Entrar
             </button>
             <button
               type="button"
-              className="rounded-md bg-green py-4 px-5 m-1 text-white text-nowrap"
+              className="lg:text-[1.1vw] md:text-[1.5vw] sm:text-[1.7vw] rounded-md bg-green lg:py-4 lg:px-5 py-3 px-4  m-1 text-white text-nowrap"
             >
               Sign up
             </button>
