@@ -1,6 +1,6 @@
 # Landing Page - Nexcent
 
-![Here is the link to access the result production](https://nexcent-dev-nana.vercel.app/)
+[Here is the link to access the result production](https://nexcent-dev-nana.vercel.app/)
 
 ## Welcome! 👋
 
